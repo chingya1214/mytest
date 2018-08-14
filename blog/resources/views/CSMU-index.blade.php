@@ -129,10 +129,10 @@
         }
         .videoframe {
             position: relative;
-            padding-bottom: 56.25%;
-            padding-top: 30px;
+            width: 100%;
             height: 0;
-            overflow: hidden;
+            padding-top: 35px;
+            padding-bottom: 56.25%;
         }
         .videoframe iframe, .videoframe object, .videoframe embed {
             position: absolute;
@@ -234,6 +234,9 @@
                 margin: 0 auto;
                 display: block;
             } */
+            .videoframe {
+                padding-top: 105px;
+            }
         }
         @media  screen and (max-width: 992px) {
             .logo-img img{
@@ -241,6 +244,9 @@
             }
             .logo-heading p{
                 font-size: 0.9rem;
+            }
+            .videoframe {
+                padding-top: 0px;
             }
             .iconimg p{
                 font-size:13px;
