@@ -1,0 +1,132 @@
+body {
+    font-family: "微軟正黑體", "Microsoft JhengHei",Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro",  "標楷體", DFKai-SB, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin:0px;
+    padding: 0px;
+}
+.mb{
+    display: none;
+}
+
+a,a:hover,a:focus,a:active{
+    text-decoration: none;
+}
+
+/* Back to top */
+.go-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(14,200,63,0.59);
+    /*background-color: rgba(0, 178, 277, 0.3);*/
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.go-top:hover {
+    background-color: rgba(14,200,63,0.89);
+    color: #076b3b;
+}
+
+/*Nav設定*/
+.Navbarbox{
+    background-color:#6E9E00;
+    padding: 10px 0;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+
+.navbar{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.nav-item{
+    position: relative;
+    color: rgba(255,255,255,0.51);
+    margin: 0 5px;
+}
+.nav-item::before{
+    content:'|';
+    position: absolute;
+    top: 6px;
+    left: -6px;
+}
+.nav-item:nth-child(1)::before{
+    content:none;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ffffff;
+}
+.dropdown-item{
+    color: rgba(255,255,255,0.51);
+}
+.dropdown-item:hover{
+    background: rgba(255,255,255,0.7);
+}
+.dropdown-item::before{
+    content: '> ';
+    font-size: 14px;
+}
+
+
+
+/*footer設定*/
+.footer{
+    color: #fff;
+    background-color:#6E9E00;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer p {
+    margin: 0;
+}
+
+@media  screen and (max-width: 1200px){
+    /* .navbar-brand{
+         margin: 0 auto;
+         display: block;
+     } */
+    .go-top{
+        right: 0.5em;
+    }
+}
+@media  screen and (max-width: 992px) {
+    .nav-item::before{
+        content:none;
+    }
+    .nav-item .nav-link i{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 768px){
+    .dp{
+        display: none;
+    }
+    .mb{
+        display: block;
+    }
+}
+@media  screen and (max-width: 576px) {
+    /* body{
+        padding-top:calc(((100vw - 107px)/2044*258) + 27px);
+    } */
+    .footer_2 p {
+        font-size: 12px;
+    }
+}
